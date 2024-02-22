@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brian Lawser CMSC 447 Homework 2</title>
+        <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'styles/index.css') }}">
+    </head>
+    <body>
+        <h1>Database Entry Web Application</h1>
+        <button class="button button-create" type = "button" onclick = "window.location.href = '{{url_for('create')}}';">Create User</button>
+        <button class="button button-delete" type = "button" onclick = "window.location.href = '{{url_for('remove')}}';">Delete User</button>
+        <button class="button button-search" type = "button" onclick = "window.location.href = '{{url_for('search')}}';">Search User</button>
+        <button class="button button-update" type = "button" onclick = "window.location.href = '{{url_for('update')}}';">Update User</button>
+        <button class="button button-display" type = "button" onclick = "window.location.href = '{{url_for('display')}}';">Display Database Table</button>
+    </body>
+</html>

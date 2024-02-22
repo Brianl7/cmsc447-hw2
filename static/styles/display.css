@@ -1,0 +1,29 @@
+.button {
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+caption {
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+th[class="id"]{
+    background-color: lightblue;
+    padding: 10px 10px;
+}
+
+th[class="points"]{
+    background-color: lightskyblue;
+}
+
+th[class="name"]{
+    background-color: lightcyan;
+}

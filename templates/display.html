@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current Database of Users</title>
+        <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'styles/display.css') }}">
+    </head>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>
+    <body>
+        <button class = "button" type = "button" onclick = "window.location.href = '{{url_for('index')}}';">Return to Homepage</button>
+        <table style = "width:100%">
+            <caption>Current Users</caption>
+            <tr>
+                <th class = "name">Name</th>
+                <th class = "id">ID</th>
+                <th class = "points">Points</th>
+            </tr>
+            {%for participant in data%}
+                <tr>
+                    <td>{{participant[0]}}</td>
+                    <td>{{participant[1]}}</td>
+                    <td>{{participant[2]}}</td>
+                </tr>
+            {%endfor%}
+        </table>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+
+.button {
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.button-create {background-color: green;}
+
+.button-delete {background-color: orangered;}
+
+.button-search {background-color: mediumturquoise;}
+
+.button-update {background-color: dodgerblue;}
+
+.button-display {background-color: blueviolet;}
